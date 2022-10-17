@@ -3,7 +3,6 @@ import random
 while True:
     list = ["rock", "paper", "scissors"]
     bot = random.choice(list)
-    print(bot)
     player = str(input(f"enter  {list}\n"))
     
     if bot == player:
@@ -17,9 +16,9 @@ while True:
                
     elif player == "paper":
         if bot == "scissors":
-            print("you win")
-        elif bot == "rock":
             print("you lost")
+        elif bot == "rock":
+            print("you win")
         
     elif player == "scissors":
         if bot == "paper":
